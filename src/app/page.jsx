@@ -6,9 +6,9 @@ export default function Home() {
     <>
       <Main />
       <Script src='/js/plugins/js/plugins.min.js' />
-      {/* <Script src='/js/theme.js' /> */}
-      {/* <ScriptLoader src='/js/theme.js' /> */}
-      {/* <ScriptLoader src='/js/theme.init.js' /> */}
+      <Script src='/js/theme.js' />
+      <ScriptLoader src='/js/theme.js' />
+      <ScriptLoader src='/js/theme.init.js' />
     </>
   )
 }
