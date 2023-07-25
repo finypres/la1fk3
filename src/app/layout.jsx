@@ -10,8 +10,8 @@ import './assets/vendor/magnific-popup/magnific-popup.min.css'
 import './assets/css/theme.css'
 import './assets/css/theme-elements.css'
 
-// import './assets/css/demos/demo-business-consulting-5.css'
-// import './assets/css/skins/skin-business-consulting-5.css'
+import './assets/css/demos/demo-business-consulting-5.css'
+import './assets/css/skins/skin-business-consulting-5.css'
 
 import Header from './components/template/header/Header'
 import Notice from './components/notice/Notice'
