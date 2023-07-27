@@ -18,10 +18,10 @@ export default function InfoPage() {
             oportunidad única.
           </p>
           <Link
-            href="#"
+            href="/como-aplicar"
             className="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5"
           >
-            Saber Más
+            Como Aplicar
           </Link>
         </div>
       </div>
@@ -38,10 +38,10 @@ export default function InfoPage() {
             situación.
           </p>
           <Link
-            href="#"
+            href="/como-aplicar"
             className="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5"
           >
-            Saber Más
+            Como Aplicar
           </Link>
         </div>
         <SvgSecond />

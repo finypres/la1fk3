@@ -25,7 +25,7 @@ export default function CoverPage() {
               Desde 2’000.000 en adelante. Plazo de hasta 72 meses y TAE del 2%
             </p>
             <Link
-              href="#"
+              href="/contactenos"
               className="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5"
             >
               Contáctenos
