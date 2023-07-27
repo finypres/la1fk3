@@ -11,10 +11,7 @@ export default function CallToAction() {
         <div className="row justify-content-center min-vh-100 align-items-center">
           <div className="col-lg-4 text-center">
             <h3 className="text-color-light">
-              Nos enfocamos en prestar el mejor servicio de préstamos en línea en
-              <mark className="text-color-light bg-transparent p-0 mark mark-gradient mark-gradient-primary">
-                finanzasypréstamos.com
-              </mark>
+              Nos enfocamos en prestar el mejor servicio de préstamos en línea en finanzasypréstamos.com
             </h3>
             <p className="text-4 text-light line-height-4 opacity-6">
               ¡No espere más compruébelo por usted mismo!

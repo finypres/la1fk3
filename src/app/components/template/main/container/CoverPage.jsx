@@ -14,9 +14,7 @@ export default function CoverPage() {
           >
             <h3 className="text-12">
               Préstamos ágiles y confiables para impulsar tus proyectos
-              <mark className="bg-transparent p-0 mark mark-gradient mark-gradient-primary">
-                Financieros.
-              </mark>
+              Financieros.
             </h3>
             <p className="text-4 line-height-5">
               ¡Descubre nuestras opciones de préstamos en línea, obtén el
