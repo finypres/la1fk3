@@ -5,3 +5,21 @@
 .bg-color-light {
   background-color: #fff;
 }
+
+.bg-hover-primary {
+  background-color: #ff6716;
+}
+
+.btn-tertiary {
+	background-color: #ffecdf;
+	border-color: #ffecdf #ffecdf #ffceac;
+	color: #777;
+	--color: #ffecdf;
+	--hover: #ffffff;
+	--disabled: #ffecdf;
+	--active: #ffd5b9;
+}
+
+.btn-tertiary:hover {
+  background-color: #ff6716;
+}

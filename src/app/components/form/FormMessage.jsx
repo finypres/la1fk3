@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from './../../styles.module.css'
 
 export default function FormMessage() {
   return (
@@ -51,7 +52,7 @@ export default function FormMessage() {
               <input
                 type="submit"
                 defaultValue="Enviar"
-                className="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3"
+                className={`btn border-0 ${styles["btn-tertiary"]} bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3`}
                 data-loading-text="Enviando..."
               />
             </div>
