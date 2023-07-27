@@ -25,14 +25,14 @@ export default function InfoPage() {
             data-plugin-float-element=""
             data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
           >
-            {/* <Image
+            <Image
               width={376}
               height={350}
               src="/img/demos/business-consulting-5/svg/icon-1.svg"
               alt=""
               data-icon=""
               data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-5 pt-5'}"
-            /> */}
+            />
           </div>
         </div>
         <div className="col-lg-4 text-center text-lg-start">
@@ -92,14 +92,14 @@ export default function InfoPage() {
             data-plugin-float-element=""
             data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
           >
-            {/* <Image
+            <Image
               width={376}
               height={350}
               src="/img/demos/business-consulting-5/svg/icon-2.svg"
               alt=""
               data-icon=""
               data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary mt-5 pt-5'}"
-            /> */}
+            />
           </div>
         </div>
       </div>
