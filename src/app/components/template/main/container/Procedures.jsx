@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import styles from './../../../../styles.module.css'
 
 export default function Procedures() {
   return (
@@ -22,7 +23,7 @@ export default function Procedures() {
           </div>
         </div>
         <div className="row justify-content-end">
-          <div className="col-lg-11 bg-color-light border-radius">
+          <div className={`col-lg-11 ${styles["bg-color-light"]} border-radius`}>
             <div className="p-5 my-4">
               <div className="row justify-content-between">
                 <div className="col-lg-4">
