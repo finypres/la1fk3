@@ -12,8 +12,8 @@ export default function InfoPage() {
               data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
             >
               <Image
-                width={370}
-                height={351}
+                width={350}
+                height={331}
                 src="/img/demos/business-consulting-5/svg/icon-bg-1.svg"
                 alt=""
                 data-icon=""
@@ -26,8 +26,8 @@ export default function InfoPage() {
             data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
           >
             <Image
-              width={276}
-              height={250}
+              width={256}
+              height={230}
               src="/img/demos/business-consulting-5/svg/icon-1.svg"
               alt=""
               data-icon=""
@@ -79,8 +79,8 @@ export default function InfoPage() {
               data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
             >
               <Image
-                width={370}
-                height={351}
+                width={350}
+                height={331}
                 src="/img/demos/business-consulting-5/svg/icon-bg-2.svg"
                 alt=""
                 data-icon=""
@@ -93,8 +93,8 @@ export default function InfoPage() {
             data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
           >
             <Image
-              width={276}
-              height={250}
+              width={256}
+              height={230}
               src="/img/demos/business-consulting-5/svg/icon-2.svg"
               alt=""
               data-icon=""
