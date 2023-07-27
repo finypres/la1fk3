@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from './../styles.module.css'
 
 export default function SectionApply() {
   return (
@@ -32,48 +33,50 @@ export default function SectionApply() {
             por elegirnos!
           </p>
           <p className="">Tasas de Intereses</p>
-          <table className="tablaTasas">
-            <thead>
-              <tr>
-                <th>Tasa de Credito</th>
-                <th>Plazo</th>
-                <th>E.A.</th>
-                <th>M.V.</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Montos entre $2.000.000 y $30.000.000</td>
-                <td>de 12 a 72 meses</td>
-                <td>26,4%</td>
-                <td>2,2%</td>
-              </tr>
-              <tr>
-                <td>Montos superiores a $30.000.000</td>
-                <td>de 12 a 72 meses</td>
-                <td>26,4%</td>
-                <td>2,2%</td>
-              </tr>
-              <tr>
-                <td>Segmento preferente tasas desde:*</td>
-                <td>de 12 a 72 meses</td>
-                <td>18,83%</td>
-                <td>1,50%</td>
-              </tr>
-              <tr>
-                <td>Segmento preferente tasas hasta:*</td>
-                <td>de 12 a 72 meses</td>
-                <td>26,4%</td>
-                <td>2,2%</td>
-              </tr>
-              <tr>
-                <td>Tasa de interes mora</td>
-                <td />
-                <td>26,4%</td>
-                <td>2,2%</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className={styles["over-x"]}>
+            <table className={styles["table-tax"]}>
+              <thead>
+                <tr>
+                  <th>Tasa de Credito</th>
+                  <th>Plazo</th>
+                  <th>E.A.</th>
+                  <th>M.V.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Montos entre $2.000.000 y $30.000.000</td>
+                  <td>de 12 a 72 meses</td>
+                  <td>26,4%</td>
+                  <td>2,2%</td>
+                </tr>
+                <tr>
+                  <td>Montos superiores a $30.000.000</td>
+                  <td>de 12 a 72 meses</td>
+                  <td>26,4%</td>
+                  <td>2,2%</td>
+                </tr>
+                <tr>
+                  <td>Segmento preferente tasas desde:*</td>
+                  <td>de 12 a 72 meses</td>
+                  <td>18,83%</td>
+                  <td>1,50%</td>
+                </tr>
+                <tr>
+                  <td>Segmento preferente tasas hasta:*</td>
+                  <td>de 12 a 72 meses</td>
+                  <td>26,4%</td>
+                  <td>2,2%</td>
+                </tr>
+                <tr>
+                  <td>Tasa de interes mora</td>
+                  <td />
+                  <td>26,4%</td>
+                  <td>2,2%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br />
           <p className="text-4-5">Ejemplo de Préstamo:</p>
           <p>

@@ -1,3 +1,4 @@
+import SvgSecond from "@/app/components/svg/SvgSecond";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -67,7 +68,7 @@ export default function Sections() {
           <h3 className="mt-5 pt-4">
             Cómo solicitar tu crédito en
             <br />
-            FinanzasyPrestamos.com
+            Finanzas y Préstamos .com
           </h3>
           <p>
             Realiza el proceso de forma virtual a través de nuestro sitio web.
@@ -81,36 +82,7 @@ export default function Sections() {
             Saber Más
           </Link>
         </div>
-        <div className="col-lg-4 p-relative pt-5 max-width-custom-1">
-          <div className="p-absolute left-0">
-            <div
-              data-plugin-float-element=""
-              data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-            >
-              <Image
-                width={470}
-                height={451}
-                src="/img/demos/business-consulting-5/svg/icon-bg-2.svg"
-                alt=""
-                data-icon=""
-                data-plugin-options="{'onlySVG': true, 'extraClass': ''}"
-              />
-            </div>
-          </div>
-          <div
-            data-plugin-float-element=""
-            data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}"
-          >
-            <Image
-              width={376}
-              height={350}
-              src="/img/demos/business-consulting-5/svg/icon-2.svg"
-              alt=""
-              data-icon=""
-              data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary mt-5 pt-5'}"
-            />
-          </div>
-        </div>
+        <SvgSecond />
       </div>
       <div className="row mt-5 py-5">
         <div className="col-lg-6">
