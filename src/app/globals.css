@@ -4,3 +4,7 @@
   min-width: 600px;
   border-collapse: collapse;
 }
+
+.bg-secondary-mod {
+  background-color: #393159 !important;
+}
