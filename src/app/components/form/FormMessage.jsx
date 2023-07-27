@@ -4,8 +4,8 @@ import styles from './../../styles.module.css'
 export default function FormMessage() {
   return (
     <>
-      <h4 className="card-title mb-2 text-6">¡Solicita Ahora!</h4>
-      <p className="card-text">Contacta un asesor en este mismo momento.</p>
+      <h4 className="card-title mb-2 text-6">¡Solicítalo Ya!</h4>
+      <p className="card-text">Completa el formulario y nos comunicamos contigo en minutos.</p>
       <form
         className="contact-form"
         action="php/contact-form.php"
