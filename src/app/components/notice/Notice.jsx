@@ -1,8 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link'
+import styles from './../../styles.module.css'
 
 export default function Notice() {
   return (
-    <div className="notice-top-bar p-relative z-index-1 bg-secondary">
+    <div className={`notice-top-bar p-relative z-index-1 ${styles.bgsecondary}`}>
       <div className="container">
         <div className="row justify-content-center py-2">
           <div className="col-9 col-md-12 text-center">
