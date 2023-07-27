@@ -38,89 +38,6 @@ export default function CoverPage() {
               data-appear-animation-delay={700}
             >
               <div className="card-body p-5 m-2 text-center">
-                {/* <h4 className="card-title mb-2 text-6">¡Solicita Ahora!</h4>
-                <p className="card-text">
-                  Contacta un asesor en este mismo momento.
-                </p>
-                <form
-                  className="contact-form"
-                  action="php/contact-form.php"
-                  method="POST"
-                >
-                  <div className="contact-form-success alert alert-success d-none mt-4">
-                    <strong>Success!</strong> Your message has been sent to us.
-                  </div>
-                  <div className="contact-form-error alert alert-danger d-none mt-4">
-                    <strong>Error!</strong> There was an error sending your
-                    message.
-                    <span className="mail-error-message text-1 d-block" />
-                  </div>
-                  <div className="row">
-                    <div className="form-group col text-start">
-                      <input
-                        type="text"
-                        defaultValue=""
-                        placeholder="Tu Nombre *"
-                        data-msg-required="Por favor, escriba su nombre."
-                        maxLength={100}
-                        className="form-control text-2-5 p-3"
-                        name="name"
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col text-start">
-                      <input
-                        type="text"
-                        defaultValue=""
-                        placeholder="Tu Número Celular *"
-                        data-msg-required="Por favor ingrese su teléfono"
-                        maxLength={100}
-                        className="form-control text-2-5 p-3"
-                        name="phone"
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="form-group col">
-                      <div className="d-grid gap-2">
-                        <input
-                          type="submit"
-                          defaultValue="Enviar"
-                          className="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3"
-                          data-loading-text="Enviando..."
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col pt-4">
-                      <div className="hstack gap-3">
-                        <div className="ms-auto">
-                          <i className="icons icon-envelope text-4 p-relative top-5 me-2" />
-                          <Link
-                            href="mailto:you@domain.com"
-                            className="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
-                          >
-                            mail@domain.com
-                          </Link>
-                        </div>
-                        <div className="vr" />
-                        <div className="me-auto">
-                          <i className="icons icon-phone text-4 p-relative top-5 me-2" />
-                          <Link
-                            href="tel:+1234567890"
-                            className="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
-                          >
-                            888 123 4567
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form> */}
                 <FormMessage />
               </div>
             </div>
@@ -244,17 +161,6 @@ export default function CoverPage() {
           </div>
         </div>
       </div>
-      {/* <div
-        className="marquee custom-marquee p-absolute"
-        data-duration={120000}
-        data-gap={10}
-        data-duplicated="true"
-        data-startvisible="true"
-      >
-        <p className="m-0 py-2 custom-outline-text-style-1">
-          MARKETING BUSINESS CONSULTING
-        </p>
-      </div> */}
     </div>
   )
 }
