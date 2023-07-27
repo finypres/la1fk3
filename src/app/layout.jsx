@@ -1,5 +1,5 @@
 import './globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 
 import './assets/vendor/fontawesome-free/css/all.min.css'
 import './assets/vendor/animate/animate.compat.css'
