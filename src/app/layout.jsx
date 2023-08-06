@@ -1,9 +1,9 @@
-import './globals.css'
-
-import Header from './components/template/header/Header'
+import 'react-toastify/dist/ReactToastify.min.css'
 import Notice from './components/notice/Notice'
 import Footer from './components/template/footer/Footer'
+import Header from './components/template/header/Header'
 import WhatsappButton from './components/whatsapp/WhatsAppButton'
+import './globals.css'
 
 export const metadata = {
   title: 'Finanzas y Préstamos | Hacemos realidad tus metas financieras',

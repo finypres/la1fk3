@@ -7,7 +7,7 @@ export default function SectionApply() {
       <div className="row">
         <div className="col">
           <p className="font-weight-medium text-4-5 line-height-5">
-            Para aplicar es fácil cumple con los siguientes requisititos,
+            Para aplicar es fácil cumple con los siguientes requisitos,
             contacta un asesor en línea el te guiara en el proceso de aprobación
             de la forma más atenta y rápida posible. Utiliza únicamente nuestras
             líneas de atención y espera la aprobación en minutos.
@@ -37,7 +37,7 @@ export default function SectionApply() {
             <table className={styles["table-tax"]}>
               <thead>
                 <tr>
-                  <th>Tasa de Credito</th>
+                  <th>Tasa de Crédito</th>
                   <th>Plazo</th>
                   <th>E.A.</th>
                   <th>M.V.</th>
@@ -69,7 +69,7 @@ export default function SectionApply() {
                   <td>2,2%</td>
                 </tr>
                 <tr>
-                  <td>Tasa de interes mora</td>
+                  <td>Tasa de interés mora</td>
                   <td />
                   <td>26,4%</td>
                   <td>2,2%</td>
@@ -99,7 +99,7 @@ export default function SectionApply() {
           <p className="text-4-5">
             Formula: I = CP * ip * N
             <br />
-            CP= Capital Préstado ip= Tasa de Interes N= Plazos en Meses
+            CP= Capital Prestado ip= Tasa de Interés N= Plazos en Meses
           </p>
           <Link
             href="/contactenos"

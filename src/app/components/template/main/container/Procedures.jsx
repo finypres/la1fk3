@@ -112,7 +112,7 @@ export default function Procedures() {
                     <p className="text-4-5">
                       Formula: I = CP * ip * N
                       <br />
-                      CP= Capital Préstado ip= Tasa de Interes N= Plazos en
+                      CP= Capital Prestado ip= Tasa de Interés N= Plazos en
                       Meses
                     </p>
                     <Link

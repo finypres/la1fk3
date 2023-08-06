@@ -102,7 +102,7 @@ export default function Footer() {
                       href="/servicios"
                       className="text-color-grey text-color-hover-primary"
                     >
-                      Libre Inversión
+                      Crédito Libre Inversión
                     </Link>
                   </li>
                   <li>
