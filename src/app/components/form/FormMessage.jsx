@@ -175,9 +175,7 @@ export default function FormMessage() {
                 <Link
                   href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_CORP}`}
                   className="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
-                >
-                  {process.env.NEXT_PUBLIC_EMAIL_CORP}
-                </Link>
+                />
               </div>
               <div className="vr" />
               <div className="me-auto">
