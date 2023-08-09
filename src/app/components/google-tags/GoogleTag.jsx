@@ -6,6 +6,7 @@ const GoogleAnalytics = ({ GA_TRACKING_ID }) => {
   return (
     <>
       <Script
+        async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         strategy="afterInteractive"
       />
