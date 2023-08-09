@@ -171,11 +171,12 @@ export default function FormMessage() {
           <div className="col pt-4">
             <div className="hstack gap-3">
               <div className="ms-auto">
-                <i className="icons icon-envelope text-4 p-relative top-5 me-2" />
                 <Link
                   href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_CORP}`}
                   className="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
-                />
+                >
+                  <i className="icons icon-envelope text-4 p-relative top-5 me-2" />
+                </Link>
               </div>
               <div className="vr" />
               <div className="me-auto">
