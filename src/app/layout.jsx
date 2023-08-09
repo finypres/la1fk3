@@ -4,6 +4,7 @@ import Footer from './components/template/footer/Footer'
 import Header from './components/template/header/Header'
 import WhatsappButton from './components/whatsapp/WhatsAppButton'
 import './globals.css'
+import GoogleAnalytics from './components/google-tags/GoogleTag'
 
 export const metadata = {
   title: 'Finanzas y Préstamos | Hacemos realidad tus metas financieras',
@@ -14,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAnalytics
+        GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID}
+      />
       <body>
         <div className="alternative-font-7">
           <div className="body mt-0">
