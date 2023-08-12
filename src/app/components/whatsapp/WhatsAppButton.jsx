@@ -2,7 +2,7 @@
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
-export default function WhatsappButton () {
+export default function WhatsAppButton () {
   return (
     <FloatingWhatsApp
       phoneNumber={`+57${process.env.NEXT_PUBLIC_PHONE_WS}`}
