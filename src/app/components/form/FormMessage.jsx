@@ -11,6 +11,7 @@ import {
   ERROR_NAME,
   ERROR_PHONE
 } from '@/app/constants/formConstant'
+import LinkConversion from '../google-tags/LinkConversion'
 
 export default function FormMessage() {
   const router = useRouter()
@@ -181,12 +182,11 @@ export default function FormMessage() {
               <div className="vr" />
               <div className="me-auto">
                 <i className="icons icon-phone text-4 p-relative top-5 me-2" />
-                <Link
-                  href={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
-                  className="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
-                >
-                  {process.env.NEXT_PUBLIC_PHONE}
-                </Link>
+                <LinkConversion 
+                  REFLINK={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
+                  CNAME="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"
+                  TEXT={process.env.NEXT_PUBLIC_PHONE}
+                />
               </div>
             </div>
           </div>

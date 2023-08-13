@@ -141,7 +141,7 @@ export default function Footer() {
           <div className="row">
             <div className="col mt-4 mb-4">
               <p className="text-3 mb-0 opacity-6">
-                FinanzasyPrestamos.com Tu aliado Financiero © 2023. All Rights
+                Finanzas y Prestamos Tu aliado Financiero © 2023. All Rights
                 Reserved.
               </p>
             </div>

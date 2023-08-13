@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LinkConversion from '../google-tags/LinkConversion'
 
 export default function Call() {
   return (
@@ -28,12 +29,11 @@ export default function Call() {
               <div className="vr mx-4 p-relative top-10 d-none d-lg-inline-block" />
               <div className="me-auto mt-3 mt-lg-0">
                 <i className="icons icon-phone text-color-primary text-8 p-relative top-10 me-2" />
-                <Link
-                  href={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
-                  className="text-decoration-none text-5 text-primary text-color-hover-light ws-nowrap font-weight-semi-bold"
-                >
-                  {process.env.NEXT_PUBLIC_PHONE}
-                </Link>
+                <LinkConversion
+                  REFLINK={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
+                  CNAME="text-decoration-none text-5 text-primary text-color-hover-light ws-nowrap font-weight-semi-bold"
+                  TEXT={process.env.NEXT_PUBLIC_PHONE}
+                />
               </div>
             </div>
           </div>
