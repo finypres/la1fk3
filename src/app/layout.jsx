@@ -6,9 +6,7 @@ import './globals.css'
 import WhatsAppButton from './components/whatsapp/WhatsAppButton'
 import {
   GoogleTagManager,
-  GoogleTagManagerNoScript,
-  GoogleAnalytics,
-  GoogleLinkConversion
+  GoogleTagManagerNoScript
 } from './components/google-tags/GoogleTags'
 
 export const metadata = {
