@@ -1,5 +1,5 @@
 import FormMessage from '@/app/components/form/FormMessage'
-import LinkConversion from '@/app/components/google-tags/LinkConversion'
+import { LinkConversion } from '@/app/components/google-tags/GoogleTags'
 import Link from 'next/link'
 
 export default function SectionForm() {
@@ -30,7 +30,7 @@ export default function SectionForm() {
               <div className="vr mx-4 p-relative top-10 d-none d-lg-inline-block" />
               <div className="me-auto mt-3 mt-lg-0">
                 <i className="icons icon-phone text-color-primary text-8 p-relative top-10 me-2" />
-                <LinkConversion 
+                <LinkConversion
                   REFLINK={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
                   CNAME="text-decoration-none text-5 text-primary text-color-hover-light ws-nowrap font-weight-semi-bold"
                   TEXT={process.env.NEXT_PUBLIC_PHONE}
