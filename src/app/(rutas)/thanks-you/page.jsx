@@ -2,7 +2,7 @@ import Breadcrumbs from '@/app/components/breadcrumbs/Breadcrumbs'
 import ScriptLoader from '@/app/components/script_loader/ScriptLoader'
 import Script from 'next/script'
 import SectionThanks from './components/SectionThanks'
-import GoogleEvent from '@/app/components/google-tags/GoogleEvent'
+import { GoogleEvent } from '@/app/components/google-tags/GoogleTags'
 
 
 export default function page() {

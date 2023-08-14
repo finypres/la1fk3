@@ -29,7 +29,7 @@ export default function Testimonials() {
                   </div>
                   <div className="px-4 mx-2 pt-2 pb-3">
                     <p>
-                      Gracias a PréstamosyFinanzas.com, pude cumplir mi sueño de
+                      Gracias a Finanzas y Prestamos, pude cumplir mi sueño de
                       iniciar mi propio negocio. Fue rápido y sin
                       complicaciones. ¡Muy recomendado!
                     </p>
@@ -72,7 +72,7 @@ export default function Testimonials() {
                   <div className="px-4 mx-2 pt-2 pb-3">
                     <p>
                       Necesitaba dinero urgentemente para pagar unas deudas y
-                      con PréstamosyFinanzas.com, obtuve el dinero en minutos.
+                      con Finanzas y Prestamos, obtuve el dinero en minutos.
                       ¡Increíble servicio!
                     </p>
                     <p className="mb-0">

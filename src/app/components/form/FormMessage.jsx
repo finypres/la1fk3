@@ -11,7 +11,8 @@ import {
   ERROR_NAME,
   ERROR_PHONE
 } from '@/app/constants/formConstant'
-import LinkConversion from '../google-tags/LinkConversion'
+import { LinkConversion } from '../google-tags/GoogleTags'
+
 
 export default function FormMessage() {
   const router = useRouter()

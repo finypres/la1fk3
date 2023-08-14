@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import LinkConversion from '../../google-tags/LinkConversion'
+import { LinkConversion } from '../../google-tags/GoogleTags'
 
 export default function Menu() {
   return (

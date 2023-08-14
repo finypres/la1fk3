@@ -3,9 +3,13 @@ import Notice from './components/notice/Notice'
 import Footer from './components/template/footer/Footer'
 import Header from './components/template/header/Header'
 import './globals.css'
-import GoogleAnalytics from './components/google-tags/GoogleAnalytics'
-import GoogleLinkConversion from './components/google-tags/GoogleLinkConversion'
 import WhatsAppButton from './components/whatsapp/WhatsAppButton'
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+  GoogleAnalytics,
+  GoogleLinkConversion
+} from './components/google-tags/GoogleTags'
 
 export const metadata = {
   title: 'Finanzas y Préstamos | Hacemos realidad tus metas financieras',
@@ -16,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager
+        TM_TRACKING_ID={process.env.NEXT_PUBLIC_TM_TRACKING_ID}
+      />
       <GoogleAnalytics
         AW_TRACKING_ID={process.env.NEXT_PUBLIC_AW_TRACKING_ID}
       />
@@ -31,6 +38,9 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
             <WhatsAppButton />
+            <GoogleTagManagerNoScript
+              TM_TRACKING_ID={process.env.NEXT_PUBLIC_TM_TRACKING_ID}
+            />
           </div>
         </div>
       </body>

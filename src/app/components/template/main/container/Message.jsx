@@ -1,5 +1,5 @@
 import FormMessage from '@/app/components/form/FormMessage'
-import LinkConversion from '@/app/components/google-tags/LinkConversion'
+import { LinkConversion } from '@/app/components/google-tags/GoogleTags'
 
 export default function Message() {
   return (
@@ -17,7 +17,7 @@ export default function Message() {
               tus sueños.
             </p>
             <i className="icons icon-phone text-8 text-color-primary me-2" />
-            <LinkConversion 
+            <LinkConversion
               REFLINK={`tel:+57${process.env.NEXT_PUBLIC_PHONE}`}
               CNAME="text-decoration-none text-5 p-relative bottom-9 font-weight-semi-bold text-light text-color-hover-primary"
               TEXT={process.env.NEXT_PUBLIC_PHONE}

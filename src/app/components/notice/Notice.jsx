@@ -1,5 +1,5 @@
+import { LinkConversion } from '../google-tags/GoogleTags'
 import styles from './../../styles.module.css'
-import LinkConversion from '../google-tags/LinkConversion'
 
 export default function Notice() {
   return (
