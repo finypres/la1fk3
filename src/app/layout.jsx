@@ -5,8 +5,8 @@ import Header from './components/template/header/Header'
 import './globals.css'
 import WhatsAppButton from './components/whatsapp/WhatsAppButton'
 import {
-  GoogleTagManager,
-  GoogleTagManagerNoScript
+  GoogleAnalytics,
+  GoogleLinkConversion
 } from './components/google-tags/GoogleTags'
 
 export const metadata = {
@@ -18,16 +18,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager
+      {/* <GoogleTagManager
         TM_TRACKING_ID={process.env.NEXT_PUBLIC_TM_TRACKING_ID}
-      />
-      {/* <GoogleAnalytics
+      /> */}
+      <GoogleAnalytics
         AW_TRACKING_ID={process.env.NEXT_PUBLIC_AW_TRACKING_ID}
       />
       <GoogleLinkConversion
         AW_TRACKING_ID={process.env.NEXT_PUBLIC_AW_TRACKING_ID}
         AW_LINK_CONVERSION_ID={process.env.NEXT_PUBLIC_AW_LINK_WA_ID}
-      /> */}
+      />
       <body>
         <div className="alternative-font-7">
           <div className="body mt-0">
@@ -36,9 +36,9 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
             <WhatsAppButton />
-            <GoogleTagManagerNoScript
+            {/* <GoogleTagManagerNoScript
               TM_TRACKING_ID={process.env.NEXT_PUBLIC_TM_TRACKING_ID}
-            />
+            /> */}
           </div>
         </div>
       </body>
