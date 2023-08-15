@@ -3,60 +3,29 @@
 import Link from 'next/link'
 import Script from 'next/script'
 
-const GTM = ({ TM_TRACKING_ID }) => {
-  return (
-    <>
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${TM_TRACKING_ID}`}
-      />
-      <Script
-        id="GTMID"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${TM_TRACKING_ID}', {
-            page_path: window.location.pathname,
-          });
-          `
-        }}
-      />
-    </>
-  )
-}
-
 // GoogleTagManager Insert <head></head>
 const GoogleTagManager = ({ TM_TRACKING_ID }) => {
   return (
-    <Script
-      id="GTM"
-      strategy='afterInteractive'
-      dangerouslySetInnerHTML={{
-        __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','${TM_TRACKING_ID}');
-          `
-      }}
-    />
+    <Script id="google-tag-manager" strategy="afterInteractive">
+      {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${TM_TRACKING_ID}');
+      `}
+    </Script>
   )
 }
 
 // GoogleTagManagerNoScript Insert <body></body>
 const GoogleTagManagerNoScript = ({ TM_TRACKING_ID }) => {
   return (
-    <noscript>
-      <iframe
-        src={`https://www.googletagmanager.com/ns.html?id=${TM_TRACKING_ID}`}
-        height={0}
-        width={0}
-        style={{ display: 'none', visibility: 'hidden' }}
-      ></iframe>
-    </noscript>
+    <noscript
+      dangerouslySetInnerHTML={{
+        __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${TM_TRACKING_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`
+      }}
+    />
   )
 }
 
@@ -127,20 +96,15 @@ const GoogleLinkConversion = ({ AW_TRACKING_ID, AW_LINK_CONVERSION_ID }) => {
 }
 
 // LinkConversion Insert <body></body>
-const LinkConversion = ({ REFLINK, CNAME, TEXT }) => {
-  const handleClick = () => {
-    if (!window.gtag_report_conversion) return
-    return window.gtag_report_conversion(REFLINK)
-  }
+const LinkConversion = ({ CLICK_ID, REFLINK, CNAME, TEXT }) => {
   return (
-    <Link onClick={handleClick} href={REFLINK} className={CNAME}>
+    <Link id={CLICK_ID} href={REFLINK} className={CNAME}>
       {TEXT}
     </Link>
   )
 }
 
 export {
-  GTM,
   GoogleTagManager,
   GoogleTagManagerNoScript,
   GoogleAnalytics,
