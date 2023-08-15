@@ -3,6 +3,28 @@
 import Link from 'next/link'
 import Script from 'next/script'
 
+const GTM = ({ TM_TRACKING_ID }) => {
+  return (
+    <>
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${TM_TRACKING_ID}`}
+      />
+      <Script
+        id="GTMID"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${TM_TRACKING_ID}');
+          `
+        }}
+      />
+    </>
+  )
+}
+
 // GoogleTagManager Insert <head></head>
 const GoogleTagManager = ({ TM_TRACKING_ID }) => {
   return (
@@ -116,6 +138,7 @@ const LinkConversion = ({ REFLINK, CNAME, TEXT }) => {
 }
 
 export {
+  GTM,
   GoogleTagManager,
   GoogleTagManagerNoScript,
   GoogleAnalytics,
