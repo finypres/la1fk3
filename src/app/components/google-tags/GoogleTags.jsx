@@ -96,9 +96,13 @@ const GoogleLinkConversion = ({ AW_TRACKING_ID, AW_LINK_CONVERSION_ID }) => {
 }
 
 // LinkConversion Insert <body></body>
-const LinkConversion = ({ CLICK_ID, REFLINK, CNAME, TEXT }) => {
+const LinkConversion = ({ REFLINK, CNAME, TEXT }) => {
+  const handleClick = () => {
+    if (!window.gtag_report_conversion) return;
+    return window.gtag_report_conversion(REFLINK);
+  };
   return (
-    <Link id={CLICK_ID} href={REFLINK} className={CNAME}>
+    <Link onClick={handleClick} href={REFLINK} className={CNAME}>
       {TEXT}
     </Link>
   )
